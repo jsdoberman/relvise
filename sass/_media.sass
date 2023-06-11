@@ -1,0 +1,233 @@
+@media (max-width: 1200px)
+    .item-block
+        width: 319px
+
+    .who__wrapper
+        gap: 30px
+        grid-template-columns: 460px auto
+
+    .footer
+        min-height: 290px
+    .footer__wrapper
+        justify-content: center
+        gap: 20px
+
+@media (max-width: 992px)
+    .promo
+        padding-bottom: 30px
+        background: url('../img/bg-1.jpg') 70% center / cover no-repeat
+
+    .promo__blocks
+        flex-wrap: wrap
+        align-items: center
+        position: static
+        transform: translateX(0)
+        margin-top: 50px
+
+    .design
+        padding: 60px 0 40px 0
+
+    .who__wrapper
+        gap: 15px
+        grid-template-columns: 350px auto
+
+    .get-item
+        width: 260px
+        height: 333px
+        background: #FFFFFF
+        padding: 50px 30px
+        display: flex
+        flex-direction: column
+        align-items: center
+
+    .touch
+        padding: 80px 10px 50px 10px
+
+    .get-item__mail div
+        font-size: 12px
+
+    .get-item-dark
+        width: 270px
+        height: 373px
+        padding: 80px 40px
+        background: #252B42
+        display: flex
+        flex-direction: column
+        align-items: center
+
+@media (max-width: 768px)
+    .item-block
+        width: 270px
+
+    .promo__blocks
+        justify-content: center
+
+    .who__wrapper
+        margin-top: 50px
+        display: grid
+        grid-template-columns: 500px
+        grid-template-rows: auto auto
+        grid-auto-rows: 440px auto
+        gap: 40px
+        justify-content: center
+
+    .subscribe__title
+        font-size: 19px
+        line-height: 27px
+
+    .subscribe
+        margin-top: 35px
+        padding: 30px 25px
+
+    .touch__wrapper
+        margin-top: 80px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+
+    .get-item
+        width: 350px
+
+    .get-item-dark
+        width: 328px
+
+    .consult__h3
+        width: 300px
+
+    .footer__wrapper
+        justify-items: center
+        display: grid
+        grid-template-columns: 250px 250px
+        grid-template-rows: auto auto
+        gap: 30px
+        grid-auto-flow: row
+        grid-auto-columns: minmax(150px, 180px)
+
+    .sub-footer__wrapper
+        flex-direction: column
+        justify-content: space-around
+
+    .sub-footer__coc
+        margin-right: 0
+
+@media (max-width: 576px)
+    .h1
+        font-size: 40px
+        line-height: 60px
+
+    .header
+        position: relative
+
+        &__nav
+            display: none
+
+        &__nav_act
+            display: block
+            position: fixed
+            top: 0
+            left: 0
+            padding-left: 0
+            margin-left: 0
+            background: #0D5C63
+            height: 100vh
+            width: 80%
+            padding-top: 50px
+            z-index: 5
+
+        &__menu
+            display: flex
+            flex-direction: column
+            margin-left: 30px
+
+        &__menu-item
+            list-style-type: none
+            margin-right: 0
+            margin-left: 50px
+            margin-bottom: 15px
+            a
+                font-weight: 600
+                font-size: 20px
+                line-height: 24px
+                letter-spacing: 0.2px
+                color: #fff
+
+    .humburger
+        position: fixed
+        z-index: 50
+        top: 45px
+        right: 25px
+        cursor: pointer
+        span
+            display: block
+            height: 3px
+            width: 35px
+            background-color: #FF7B47
+            margin: 3px 0
+
+    .humburger_active
+        span
+            &:nth-child(1)
+                transform: translateY(3px) rotate(45deg)
+            &:nth-child(2)
+                display: none
+            &:nth-child(3)
+                transform: translateY(-3px) rotate(-45deg)
+
+    .who__wrapper
+        margin-top: 50px
+        display: grid
+        grid-template-columns: 300px
+        grid-template-rows: auto auto
+        grid-auto-rows: 440px auto
+        gap: 40px
+        justify-content: center
+
+    .who__img
+        height: 300px
+
+    .who__play
+        top: 35%
+
+    .subscribe
+        margin-top: 40px
+        flex-wrap: wrap
+        padding: 30px 10px
+
+    .subscribe__input
+        height: 48px
+        padding: 15px 8px
+
+    .subscribe__btn
+        width: 85px
+        height: 48px
+
+    .brands
+        background-image: none
+
+    .consult__wrapper
+        justify-content: center
+
+    .consult__h3
+        text-align: center
+
+    .consult__descr
+        text-align: center
+
+    .consult__btn
+        margin-top: 15px
+
+    .footer__wrapper
+        justify-items: left
+        display: grid
+        grid-template-columns: 250px
+        grid-template-rows: auto auto auto auto
+        gap: 30px
+        grid-auto-flow: row
+        grid-auto-columns: minmax(150px, 180px)
+
+    .footer__item_contact
+        justify-self: left
+
+    .sub-footer__title
+        text-align: center

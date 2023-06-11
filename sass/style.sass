@@ -1,0 +1,650 @@
+
+/*------------------------------------------------VAR---*/ 
+
+/*------------------------------------------------mane---*/ 
+*
+    box-sizing: border-box
+    margin: 0
+
+body
+    font-family: 'Montserrat', sans-serif
+    color: #252B42
+    letter-spacing: 0.2px
+    background-color: #FAFAFA
+
+h1, h2, h3, h4, h5, h6
+    margin-bottom: 0
+
+.container
+    max-width: 1065px
+    margin: 0 auto
+    padding: 0 10px 0 10px
+
+.h1
+    font-style: normal
+    font-weight: 800
+    font-size: 58px
+    line-height: 80px
+    letter-spacing: 0.2px
+
+.h2
+    text-align: center
+    font-style: normal
+    font-weight: 700
+    font-size: 40px
+    line-height: 57px
+    &_left
+        text-align: left
+
+.h3
+    font-style: normal
+    font-weight: 700
+    font-size: 24px
+    line-height: 32px
+    letter-spacing: 0.1px
+
+.title-descr
+    max-width: 510px
+    margin: 0 auto
+    text-align: center
+    margin-top: 10px
+    font-style: normal
+    font-weight: 500
+    font-size: 14px
+    line-height: 20px
+    color: #737373
+    &_left
+        text-align: left
+/*------------------------------------------------header---*/ 
+.header
+    height: 104px
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+    &__logo
+        width: 91px
+        height: 52px
+        img
+            width: 100%
+            height: 100%
+            object-fit: contain
+
+    &__menu
+        display: flex
+        padding-left: 0
+        margin-left: 132px
+        margin-bottom: 0
+
+    &__menu-item
+        list-style-type: none
+        margin-right: 21px
+        a
+            font-weight: 600
+            font-size: 14px
+            line-height: 24px
+            letter-spacing: 0.2px
+            color: #737373
+
+/*------------------------------------------------promo---*/
+.promo
+    position: relative
+    min-height: 790px
+    padding-bottom: 170px
+    background: url('../img/bg-1.jpg') center center / cover no-repeat
+
+    &__h1
+        max-width: 509px
+        margin-top: 80px
+
+    &__descr
+        margin-top: 35px
+        max-width: 376px
+        font-style: normal
+        font-weight: 500
+        font-size: 20px
+        line-height: 30px
+        color: #737373
+
+    &__btns
+        display: flex
+        flex-wrap: wrap
+        margin-top: 35px
+        gap: 10px
+
+    &__btn-now
+        display: block
+        padding: 10px 36px
+        min-width: 187px
+        height: 48px
+        background: #FF7B47
+        border-radius: 37px
+        font-style: normal
+        font-weight: 700
+        font-size: 14px
+        line-height: 28px
+        color: #FFFFFF
+
+    &__btn-more
+        display: block
+        padding: 10px 36px
+        min-width: 157px
+        height: 48px
+        border: 1px solid #0D5C63
+        border-radius: 37px
+        font-style: normal
+        font-weight: 700
+        font-size: 14px
+        line-height: 28px
+        color: #0D5C63
+
+    &__blocks
+        display: flex
+        gap: 10px
+        position: absolute
+        top: 85%
+        left: 50%
+        transform: translateX(-50%)
+        margin: 0 auto
+
+.item-block
+    width: 329px
+    min-height: 242px
+    padding: 35px 40px
+    background: #FFFFFF
+    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07)
+
+    &_dark
+        background: #0D5C63
+
+    &__h3
+        margin-top: 10px
+        &_dark
+            color: #FFFFFF
+
+    &__descr
+        margin-top: 10px
+        font-style: normal
+        font-weight: 500
+        font-size: 14px
+        line-height: 20px
+        color: #737373
+        &_dark
+            color: #FFFFFF
+
+/*------------------------------------------------design---*/
+.design
+    min-height: 657px
+    padding: 210px 0 120px 0
+
+    &__h2
+
+    &__wrapper
+        margin-top: 50px
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        gap: 16px
+        align-items: center
+
+.block-design
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 30px 40px
+    min-height: 209px
+    width: 249px
+    background: #FFFFFF
+
+    &__title
+        margin-top: 10px
+        font-style: normal
+        font-weight: 700
+        font-size: 40px
+        line-height: 57px
+        color: #252B42
+
+    &__descr
+        font-style: normal
+        font-weight: 700
+        font-size: 16px
+        line-height: 24px
+        letter-spacing: 0.1px
+        color: #737373
+
+/*------------------------------------------------practice---*/
+
+.practice
+    min-height: 520px
+    padding: 20px 0 70px 0
+
+    &__wrapper
+
+        margin-top: 45px
+        display: grid
+        grid-template-columns: repeat(auto-fit, 238px)
+        grid-template-rows: minmax(341px, auto)
+        grid-auto-rows: minmax(341px, auto)
+        gap: 30px
+        justify-content: center
+
+.advice-block
+    display: grid
+    grid-template-columns: auto
+    grid-template-rows: repeat(3, auto)
+
+    &__title
+        margin: 30px 30px 0 30px
+        font-style: normal
+        font-weight: 700
+        font-size: 16px
+        line-height: 24px
+        letter-spacing: 0.1px
+        color: #252B42
+
+    &__descr
+        margin: 0 25px 0 30px
+        font-style: normal
+        font-weight: 500
+        font-size: 14px
+        line-height: 20px
+        color: #737373
+
+    &__img
+        margin-top: 5px
+        align-self: end
+        justify-self: center
+        width: 230px
+        height: 138px
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+
+/*------------------------------------------------who---*/
+
+.who
+    min-height: 620px
+    background: url('../img/bg-3.jpg') center center / cover no-repeat
+    padding: 100px 0 40px 0
+
+    &__wrapper
+        margin-top: 100px
+        display: grid
+        grid-template-columns: 600px auto
+        grid-template-rows: auto
+        grid-auto-rows: 440px
+        gap: 100px
+
+    &__wrapper-right
+        padding-top: 20px
+
+    &__h2-right
+
+    &__descr-right
+        margin-top: 10px
+
+    &__items
+        margin-top: 50px
+        padding-left: 42px
+
+    &__item
+        list-style-type: none
+
+    &__item_people
+        position: relative
+        &::before
+            content: ''
+            display: block
+            position: absolute
+            top: 0
+            left: -42px
+            background-image: url('../img/icons/w-2.svg')
+            width: 32px
+            height: 32px
+    &__item_time
+        position: relative
+        &::before
+            content: ''
+            display: block
+            position: absolute
+            top: 0
+            left: -42px
+            background-image: url('../img/icons/w-3.svg')
+            width: 32px
+            height: 32px
+
+    &__item-title
+        font-style: normal
+        font-weight: 700
+        font-size: 16px
+        line-height: 24px
+        letter-spacing: 0.1px
+
+    &__item-descr
+        margin-top: 5px
+        font-style: normal
+        font-weight: 600
+        font-size: 14px
+        line-height: 24px
+        color: #737373
+
+    &__wrapper-left
+        position: relative
+
+    &__play
+        position: absolute
+        display: block
+        top: 42%
+        transform: translateY(-50%)
+        left: 50%
+        transform: translateX(-50%)
+
+    &__img
+        max-width: 597px
+        height: 442px
+        background: #FFFFFF
+        border: 1px solid #DEDEDE
+        border-radius: 5px
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+
+/*------------------------------------------------brands---*/
+
+.brands
+    min-height: 405px
+    padding: 70px 0 20px 0
+    background-image: url('../img/brand-line.jpg')
+    background-repeat: no-repeat
+    background-position-y: bottom
+    background-size: contain
+
+    &__wrapper
+        min-height: 195px
+        display: flex
+        gap: 20px
+        justify-content: space-between
+        align-items: center
+        flex-wrap: wrap
+
+.subscribe
+    margin: 0 auto
+    margin-top: 15px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    max-width: 986px
+    min-height: 124px
+    padding: 30px 50px
+    background: #17213C
+    border-radius: 2px
+
+    &__title
+        max-width: 266px
+        font-style: normal
+        font-weight: 700
+        font-size: 24px
+        line-height: 32px
+        letter-spacing: 0.1px
+        color: #FFFFFF
+
+    &__form
+        display: flex
+        align-items: center
+
+    &__input
+        max-width: 333px
+        height: 58px
+        border-radius: 5px 0px 0px 5px
+        padding: 15px 20px
+        font-style: normal
+        font-weight: 400
+        font-size: 14px
+        line-height: 28px
+        color: #737373
+
+    &__btn
+        width: 117px
+        height: 58px
+        display: block
+        background: #FF7B47
+        border: 1px solid #E6E6E6
+        border-radius: 0px 5px 5px 0px
+        font-style: normal
+        font-weight: 400
+        font-size: 14px
+        line-height: 28px
+        color: #FFFFFF
+
+/*------------------------------------------------touch---*/
+
+.touch
+    padding: 80px 32px 148px 32px
+    background: #F3F3F3
+
+    &__wrapper
+        margin-top: 80px
+        display: flex
+        justify-content: center
+        align-items: center
+
+.get-item
+    max-width: 327px
+    height: 333px
+    background: #FFFFFF
+    padding: 50px 40px
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    &__mail
+        margin-top: 15px
+    &__mail div
+        font-style: normal
+        font-weight: 600
+        font-size: 14px
+        line-height: 24px
+        text-align: center
+
+    &__title
+        margin-top: 15px
+        font-style: normal
+        font-weight: 700
+        font-size: 16px
+        line-height: 24px
+        letter-spacing: 0.1px
+
+    &__btn
+        margin-top: 25px
+        padding: 10px 20px
+        gap: 10px
+        height: 44px
+        border: 1px solid #FF7B47
+        border-radius: 5px
+        font-style: normal
+        font-weight: 600
+        font-size: 14px
+        line-height: 24px
+        color: #FF7B47
+        text-decoration: none
+        &:hover
+            color: #FF7B47
+
+.get-item-dark
+    width: 328px
+    height: 393px
+    padding: 80px 40px
+    background: #252B42
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    &__mail-dark
+        margin-top: 15px
+    &__mail-dark div
+        font-style: normal
+        font-weight: 600
+        font-size: 14px
+        line-height: 24px
+        text-align: center
+        color: #FFFFFF
+
+    &__title-dark
+        margin-top: 15px
+        font-style: normal
+        font-weight: 700
+        font-size: 16px
+        line-height: 24px
+        letter-spacing: 0.1px
+        color: #FFFFFF
+
+    &__btn-dark
+        margin-top: 15px
+        padding: 10px 20px
+        height: 44px
+        border: 1px solid #FFFFFF
+        border-radius: 5px
+        font-style: normal
+        font-weight: 600
+        font-size: 14px
+        line-height: 24px
+        color: #FFFFFF
+        &:hover
+            color: #FFFFFF
+
+/*------------------------------------------------consult---*/
+
+.consult
+    min-height: 142px
+
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 40px 8px 40px 0
+        flex-wrap: wrap
+
+    &__h3
+        max-width: 500px
+
+    &__descr
+        text-align: left
+
+    &__btn
+        padding: 15px 40px
+        height: 58px
+        background: #FF7B47
+        border-radius: 5px
+        font-style: normal
+        font-weight: 700
+        font-size: 14px
+        line-height: 28px
+        color: #FFFFFF
+        &:hover
+            color: #FFFFFF
+/*------------------------------------------------footer---*/
+
+.footer
+    min-height: 345px
+    padding: 50px 25px 50px 0
+    background: #17213C
+
+    &__wrapper
+        display: grid
+        grid-template-columns: repeat(3, minmax(150px, 180px)) auto
+        gap: 30px
+        grid-auto-flow: column
+        grid-auto-columns: minmax(150px, 180px)
+
+    &__item
+        &_contact
+            justify-self: end
+
+    &__item-title
+        font-style: normal
+        font-weight: 700
+        font-size: 16px
+        line-height: 24px
+        letter-spacing: 0.1px
+        color: #FFFFFF
+
+    &__item-list
+        margin-top: 20px
+        padding-left: 0
+        margin-bottom: 0
+        li
+            list-style-type: none
+            margin-bottom: 10px
+            a
+                font-style: normal
+                font-weight: 600
+                font-size: 14px
+                line-height: 24px
+                color: #FFFFFF
+                text-decoration: none
+
+        &_contact
+            padding-left: 34px
+            li
+                margin-bottom: 15px
+
+        &_tel
+            position: relative
+            &::before
+                content: ''
+                width: 24px
+                height: 25px
+                position: absolute
+                background-image: url('../img/icons/ft-1.svg')
+                background-repeat: no-repeat
+                top: 0
+                left: -34px
+
+        &_loc
+            position: relative
+            &::before
+                content: ''
+                width: 24px
+                height: 31px
+                position: absolute
+                background-image: url('../img/icons/ft-2.svg')
+                background-repeat: no-repeat
+                top: 0
+                left: -34px
+
+        &_mess
+            position: relative
+            &::before
+                content: ''
+                width: 24px
+                height: 26px
+                position: absolute
+                background-image: url('../img/icons/ft-3.svg')
+                background-repeat: no-repeat
+                top: 0
+                left: -34px
+
+/*------------------------------------------------sub-footer---*/
+
+.sub-footer
+    &__wrapper
+        min-height: 74px
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+    &__title
+        font-style: normal
+        font-weight: 600
+        font-size: 14px
+        line-height: 24px
+        color: #737373
+
+    &__coc
+        margin-right: 30px
+        img
+            margin: 0 10px
+
+@import 'media'
